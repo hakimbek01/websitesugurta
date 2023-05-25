@@ -72,9 +72,6 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     final currentWitdh = MediaQuery.of(context).size.width;
     return Scaffold(
-      appBar: AppBar(
-        title: Text(currentWitdh.toString()),
-      ),
       body: ListView(
         padding: EdgeInsets.zero,
         children: [
@@ -85,7 +82,7 @@ class _HomePageState extends State<HomePage> {
             decoration: const BoxDecoration(
               image: DecorationImage(
                   fit: BoxFit.cover,
-                  image: AssetImage("assets/images/img.png")
+                  image: AssetImage("assets/images/main.png")
               ),
             ),
             child: Container(
@@ -132,7 +129,7 @@ class _HomePageState extends State<HomePage> {
               ),
             ),
           ),
-          //bottom
+          //hujjat
           currentWitdh<760?
           Container(
               margin: const EdgeInsets.all(20),
@@ -845,6 +842,7 @@ class _HomePageState extends State<HomePage> {
             ],
           ),
           SizedBox(height: 40,),
+          //bottom
           Container(
             padding: EdgeInsets.all(10),
             width: double.infinity,
@@ -878,11 +876,8 @@ class _HomePageState extends State<HomePage> {
                               shape: CircleBorder(),
                               child: CircleAvatar(
                                 backgroundColor: Colors.grey[100],
-                                child: Image.asset(
-                                  'assets/images/telegram.png',
-                                  height: 50,
-                                ),
-                                radius: 25,
+                                child: Icon(Icons.telegram,size: 60,),
+                                radius: 30,
                               ),
                             ),
                           ),
