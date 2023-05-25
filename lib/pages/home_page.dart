@@ -588,7 +588,7 @@ class _HomePageState extends State<HomePage> {
                       child: const Text("Hisoblash",style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold,fontSize: 17),),
                     ),
                     const SizedBox(height: 15,),
-                    Text(resuld,style: TextStyle(fontSize: 35,fontFamily: "Font"),)
+                    Text(resuld,style: const TextStyle(fontSize: 35,fontFamily: "Font"),)
                   ],
                 )
               ],
@@ -682,7 +682,7 @@ class _HomePageState extends State<HomePage> {
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
                             const Text("Haydovchilar soni",style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold),),
-                            SizedBox(width: 30,),
+                            const SizedBox(width: 30,),
                             Expanded(
                               child: Row(
                                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -712,7 +712,7 @@ class _HomePageState extends State<HomePage> {
                                       ),
                                     ),
                                   ),
-                                  SizedBox(width: 30,),
+                                  const SizedBox(width: 30,),
                                   Expanded(
                                     child: GestureDetector(
                                       onTap: () {
@@ -832,7 +832,7 @@ class _HomePageState extends State<HomePage> {
                             child: const Text("Hisoblash",style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold,fontSize: 17),),
                           ),
                           const SizedBox(height: 15,),
-                          Text(resuld,style: TextStyle(fontSize: 35,fontFamily: "Font"),)
+                          Text(resuld,style: const TextStyle(fontSize: 35,fontFamily: "Font"),)
                         ],
                       )
                     ],
@@ -841,10 +841,10 @@ class _HomePageState extends State<HomePage> {
               )
             ],
           ),
-          SizedBox(height: 40,),
+          const SizedBox(height: 40,),
           //bottom
           Container(
-            padding: EdgeInsets.all(10),
+            padding: const EdgeInsets.all(10),
             width: double.infinity,
             color: Colors.black,
             child: Column(
@@ -854,7 +854,7 @@ class _HomePageState extends State<HomePage> {
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
                     Column(
-                      children: [
+                      children: const [
                         Text("Murojat uchun",style: TextStyle(color: Colors.orangeAccent,fontSize: 15,fontFamily: "Font",fontWeight: FontWeight.bold),),
                         SizedBox(height: 20,),
                         Text("+998 916474950",style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold),)
@@ -862,8 +862,8 @@ class _HomePageState extends State<HomePage> {
                     ),
                     Column(
                       children: [
-                        Text("Telegram Guruhimiz",style: TextStyle(color: Colors.orangeAccent,fontSize: 15,fontFamily: "Font",fontWeight: FontWeight.bold),),
-                        SizedBox(height: 20,),
+                        const Text("Telegram Guruhimiz",style: TextStyle(color: Colors.orangeAccent,fontSize: 15,fontFamily: "Font",fontWeight: FontWeight.bold),),
+                        const SizedBox(height: 20,),
                         InkWell(
                           onTap: () async {
                             Uri url = Uri.parse("https://t.me/sugurta2023");
@@ -873,10 +873,10 @@ class _HomePageState extends State<HomePage> {
                             endRadius: 40.0,
                             child: Material(     // Replace this child with your own
                               elevation: 8.0,
-                              shape: CircleBorder(),
+                              shape: const CircleBorder(),
                               child: CircleAvatar(
                                 backgroundColor: Colors.grey[100],
-                                child: Icon(Icons.telegram,size: 60,),
+                                child: const Icon(Icons.telegram,size: 60,),
                                 radius: 30,
                               ),
                             ),
@@ -893,12 +893,12 @@ class _HomePageState extends State<HomePage> {
                         ),
                         const SizedBox(height: 10,),
                         MaterialButton(
-                          padding: EdgeInsets.only(bottom: 10),
+                          padding: const EdgeInsets.only(bottom: 10),
                           onPressed: () async {
                             Uri url = Uri.parse("https://t.me/onlayn2023");
                             await launchUrl(url);
                           },
-                          child: Text("@onlayn2023",style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold),),
+                          child: const Text("@onlayn2023",style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold),),
                         )
                       ],
                     ),
@@ -911,7 +911,7 @@ class _HomePageState extends State<HomePage> {
                       Uri url = Uri.parse("https://t.me/hakimbek_dev");
                       await launchUrl(url);
                     },
-                    child: Text("Dasturchi bilan bog'lanish",style: TextStyle(color: Colors.grey,fontWeight: FontWeight.bold),),
+                    child: const Text("Dasturchi bilan bog'lanish",style: TextStyle(color: Colors.grey,fontWeight: FontWeight.bold),),
                   ),
                 )
               ],
